@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+.done {
+  text-decoration: line-through;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body{
+  background: linear-gradient(45deg, #f8f4f5, #3F5EFB); 
+  height: 100vh;
+  font-family: arial, sans-serif;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(https://codepen.io/hamzakalid/pen/poJEOPv); */
+  /* background-image: url("https://p4.wallpaperbetter.com/wallpaper/460/741/251/aero-background-wallpaper-preview.jpg"); */
+  
+  background-repeat: no-repeat;
+  background-size:100%;
+  
+  
+ 
+}
+
+.App {
+  /* background-color:rgba(169, 169, 169, 0.597);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 55%;
+  margin: 2.5% auto;
+  border-radius: 25% 10%;
+  box-shadow: -5px -5px 30px 5px rgb(166, 98, 98), 5px 5px 30px 5px rgb(197, 187, 197); */
+
+  background: rgba(255, 255, 255, .3);
+  width: 55%;
+  padding: 3rem;
+  align-items: center;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 55%;
+  margin: 2.5% auto;
+  box-shadow: -5px -5px 30px 5px rgb(254, 253, 253), 5px 5px 30px 5px rgb(197, 187, 197);
+
+   
+}
+h1 {
+  
+   @font-palette-values --Purples;
+    font-family: Rocher;
+    base-palette: 6;
+    font-palette: --Purples;
+    align-self: center;
+  
+  }
+  
+input {
+  outline: none;
+  border: 2px solid #292827fd;
+  padding: 14px 32px 14px 16px;
+  background: transparent;
+  width: 28vw;
+  border-radius: 17px;
+  color: white;
+  font-weight:bold;
+  /* background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  padding: 1rem;
+  width: 200px;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+  color: white;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  transition: all .3s;
+  margin-bottom: 2em; */
+}
+.add button {
+  outline: none;
+  border: none;
+  padding: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 170, 0.735) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+ 
+  border-radius: 100% ;
+
+  @font-palette-values --Grays;
+  font-family: Rocher;
+  base-palette: 6;
+  font-palette: --Purples;
+
+     
+         
+
+    }
+
+.task {
+  color: white;
+  font-weight:bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35vw;
+  /* border-radius: 10px; */
+  border: none;
+  margin: 20px auto;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  /* height: 40px; */
+  padding: 10px 10px;
+}
+
+.task button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: whitesmoke;
+  font-weight:bold;
+  width: 7.5rem;
+  height: 2rem;
+  transition: all 0.5s;
+
+  
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 3px hsla(142, 75%, 44%, 0.621);
+
+
+
+
+}
+.task button:hover {
+  background: wheat;
+  color: #000;
+}
+
+.task:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgb(12, 255, 170) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.task:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgb(107, 43, 104) 0%,
+    rgba(250, 183, 0, 0.38) 100%
+  );
+}
+
+.task:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(174, 98, 18, 0.862) 0%,
+    rgba(125, 104, 121, 0.678) 100%
+  );
+}
+@media screen and (max-width: 900px) {
+  .App {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+  }
+  input {
+    border: 2px solid #5d0cff;
+    padding: 7px 16px 7px 8px;
+    background: transparent;
+    width: 68vw;
+    border-radius: 4px 0 0 4px;
+    color: white;
+  }
+  .add button {
+    padding: 9px;
+    /* border-radius: 0 2px 2px 0; */
+    align-self: center;
+    
+  }
+  .task {
+    color: white;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    border-radius: 6px;
+    border: none;
+    margin: 12px auto;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+    /* height: 40px; */
+    padding: 5px 5px;
+  }
+  .task button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 4rem;
+    height: 2rem;
+    transition: all 0.5s;
+    font-size: 1em;
+    
+    
+  }
+}
